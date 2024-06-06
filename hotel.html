@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Hotelzimmer-Buchungssystem</title>
+    <meta charset="UTF-8">
+    <title>Hotelzimmer-Buchungssystem</title>
 
 </head>
 <body>
 
 <h1>Hotelzimmer-Buchungssystem</h1>
+<form action="#">
+    <label>Zimmertyp:
+        <select name="anreise[]" size="3" multiple>
+            <option>Einzelzimmer</option>
+            <option>Doppelzimmer</option>
+            <option>Suite</option>
+        </select>
+    </label>
 
+    <input type="checkbox" name="zusatzleistung[]" value="Frühstück" id="check1" checked>
+    <label for="check1">Frühstück</label>
+    <input type="checkbox" name="zusatzleistung[]" value="Flughafentransfer" id="check2">
+    <label for="check2">Flughafentransfer</label>
+    <input type="checkbox" name="zusatzleistung[]" value="Spa-Zugang" id="check3">
+    <label for="check3">Spa-Zugang</label>
+</form>
 
 </body>
 </html>
